@@ -847,6 +847,7 @@ a {
   background: #ffffff;
 }
 
+.certificate-caption h3,
 .certificate-caption h4 {
   font-size: 1.08rem;
   font-weight: 700;
@@ -914,6 +915,7 @@ a {
   background: #ffffff;
 }
 
+.gallery-caption h3,
 .gallery-caption h4 {
   font-size: 1.05rem;
   font-weight: 700;
@@ -1522,6 +1524,7 @@ a {
     padding: 1rem;
   }
 
+  .certificate-caption h3,
   .certificate-caption h4 {
     font-size: 1rem;
   }

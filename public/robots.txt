@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wed-2003-rsfp.vercel.app/sitemap.xml
