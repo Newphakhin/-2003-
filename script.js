@@ -60,6 +60,8 @@ const translations = {
     'profile.addrVal': '299/258 หมู่บ้านเดอะ คัลเลอร์ส ซอยสุเหร่าคลองหนึ่ง 15 แขวงบางชัน เขตคลองสามวา กรุงเทพมหานคร 10510',
     'profile.phoneLabel': 'หมายเลขโทรศัพท์',
     'profile.copyPhoneBtn': 'คัดลอกเบอร์โทร',
+    'profile.emailLabel': 'อีเมล (E-mail)',
+    'profile.copyEmailBtn': 'คัดลอกอีเมล',
     'gallery.secNum': 'ส่วนที่ ๒',
     'gallery.title': 'ภาพยานพาหนะและการดำเนินงานของบริษัท',
     'gallery.subtitle': 'ประมวลภาพยานพาหนะและการปฏิบัติงานขนส่งและขนถ่ายสินค้าและคนโดยสารของ บริษัท จักรพงษ์ ขนส่ง (2003) จำกัด',
@@ -150,6 +152,8 @@ const translations = {
     'profile.addrVal': '299/258 The Colours Village, Soi Suheraklongnueng 15, Bang Chan, Khlong Sam Wa, Bangkok 10510',
     'profile.phoneLabel': 'Telephone Number',
     'profile.copyPhoneBtn': 'Copy Phone',
+    'profile.emailLabel': 'E-mail Address',
+    'profile.copyEmailBtn': 'Copy E-mail',
     'gallery.secNum': 'SECTION II',
     'gallery.title': 'Company Fleet & Operations',
     'gallery.subtitle': 'Visual documentation of transport vehicles and cargo/passenger handling operations',
@@ -268,6 +272,15 @@ function initApp() {
     });
   }
 
+  const copyEmailBtn = document.getElementById('copyEmailBtn');
+  if (copyEmailBtn) {
+    copyEmailBtn.addEventListener('click', () => {
+      copyToClipboard('Chakrapongsaimongkol@gmail.com', currentLang === 'th'
+        ? 'คัดลอกอีเมล Chakrapongsaimongkol@gmail.com เรียบร้อยแล้ว'
+        : 'Copied E-mail: Chakrapongsaimongkol@gmail.com');
+    });
+  }
+
   const copyAllInfoBtn = document.getElementById('copyAllInfoBtn');
   if (copyAllInfoBtn) {
     copyAllInfoBtn.addEventListener('click', () => {
@@ -282,7 +295,8 @@ function initApp() {
         'หมวดธุรกิจ: การขนส่งและขนถ่ายสินค้า และคนโดยสารทางบก (รถรับส่งไม่ประจำทาง)',
         'วัตถุประสงค์: ประกอบกิจการขนส่งและขนถ่ายสินค้า และคนโดยสารทางบก รถรับส่งไม่ประจำทาง ทั่วประเทศ(ยกเว้น3จังหวัดชายแดนภาคใต้)',
         'ที่ตั้งสำนักงานใหญ่: 299/258 หมู่บ้านเดอะ คัลเลอร์ส ซอยสุเหร่าคลองหนึ่ง 15 แขวงบางชัน เขตคลองสามวา กรุงเทพมหานคร 10510',
-        'โทรศัพท์: 087-332-8245'
+        'โทรศัพท์: 087-332-8245',
+        'E-mail: Chakrapongsaimongkol@gmail.com'
       ].join('\n');
       copyToClipboard(infoBlock, currentLang === 'th'
         ? 'คัดลอกข้อมูลนิติบุคคลทั้งหมดเรียบร้อยแล้ว'
