@@ -734,6 +734,124 @@ a {
   color: var(--text-secondary);
 }
 
+/* Section 1: History & Achievement Grid */
+.history-achievement-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+.history-card,
+.achievement-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-card-body {
+  padding: 1.75rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.history-paragraph {
+  font-size: 1.04rem;
+  color: var(--text-main);
+  text-indent: 2rem;
+  margin-bottom: 1.15rem;
+  text-align: justify;
+}
+
+.history-highlights {
+  margin-top: 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.history-highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--navy-main);
+  background: var(--surface-ivory);
+  padding: 0.65rem 1rem;
+  border-left: 3px solid var(--gold-main);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.history-highlight-item svg {
+  color: var(--gold-main);
+}
+
+.achievement-card-body {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.certificate-figure {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  cursor: pointer;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.certificate-figure:hover {
+  border-color: var(--gold-main);
+}
+
+.certificate-img-wrap {
+  position: relative;
+  background: #faf6ee;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 290px;
+}
+
+.certificate-img-wrap img {
+  width: 100%;
+  max-height: 310px;
+  object-fit: contain;
+  display: block;
+  box-shadow: var(--shadow-sm);
+}
+
+.certificate-caption {
+  padding: 1.15rem 1.35rem;
+  border-top: 2px solid var(--gold-main);
+  background: #ffffff;
+}
+
+.certificate-caption h4 {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--navy-main);
+  margin-bottom: 0.35rem;
+}
+
+.certificate-caption p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
 /* Section 3: Gallery Grid */
 .gallery-grid {
   display: grid;
@@ -1119,6 +1237,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .history-achievement-grid,
   .contact-location-grid {
     grid-template-columns: 1fr;
   }
