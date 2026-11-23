@@ -108,6 +108,7 @@ const translations = {
     'contact.facebookBtn': 'เพจ Facebook (จักรพงษ์-หกล้อรับส่งคนงาน)',
     'contact.tiktokBtn': 'ติดตามช่องทาง TikTok (@chakrapong0_0)',
     'contact.mapHeader': 'แผนที่ตั้ง บจก.จักรพงษ์ ขนส่ง (2003)',
+    'contact.gpsAddrVal': '689 พระราม 9 ซอย 13 แขวงบางกะปิ เขตห้วยขวาง กรุงเทพมหานคร 10310',
     'contact.openMapBtn': 'เปิดใน Google Maps',
     'location.copyAddrBtn': 'คัดลอกที่อยู่'
   },
@@ -213,6 +214,7 @@ const translations = {
     'contact.facebookBtn': 'Facebook Page (จักรพงษ์-หกล้อรับส่งคนงาน)',
     'contact.tiktokBtn': 'Follow on TikTok (@chakrapong0_0)',
     'contact.mapHeader': 'Company Location Map',
+    'contact.gpsAddrVal': '689 Rama 9 Soi 13, Bang Kapi, Huai Khwang, Bangkok 10310',
     'contact.openMapBtn': 'Open in Google Maps',
     'location.copyAddrBtn': 'Copy Address'
   }
